@@ -1,7 +1,7 @@
 
-#REstful Web Services
+# REstful Web Services
 
-Running the application (RestfulWebServicesApplication)
+# Running the application (RestfulWebServicesApplication)
 
 -	Download the zip or clone the Git repository.
 -	Unzip the zip file (if you downloaded one)
@@ -16,7 +16,7 @@ Running the application (RestfulWebServicesApplication)
 
 Social Media Application
 
-1.  Users	->	Posts
+1.  # Users	->	Posts
     -	Retrieve all Users			    --> GET 		/users
     -	Create a User				    -->	POST		/users
     -	Retrieve one User			    -->	GET 		/users{id}	->	/users/1
@@ -25,11 +25,11 @@ Social Media Application
     -	Create a posts for a User		-->	POST		/users/{id}/posts
     -	Retrieve details of a post		-->	GET 		/users/{id}/posts/{post_id}
 
-2.  To enable kinks -
+2.  # To enable kinks -
     -	HATEOAS - Hybermededia As The Engine of Application State
 	
-3.  Internationalization
-    -	# Configuration
+3.  # Internationalization
+    	-	Configuration
     	-	LocaleResolver
     		-	Default Locale	-	Locale.US
     	-	ResourceBundleMessageSource
@@ -38,24 +38,24 @@ Social Media Application
     	-	@RequestHeader(value =  "Accept-Language", required=false) Locale locale
     	-	messageSource.getMessage("helloworld.message", null, locale)
 
-4.  Swagger
+4.  # Swagger
     -	SwaggerConfig.class
     -	http://localhost:8080/v2/api-docs
     -	http://localhost:8080/swagger-ui.html
 
-5.  Monitoring - with Actuator and HAL browser.
+5.  # Monitoring - with Actuator and HAL browser.
     -	http://localhost:8080/application/index.html#/application
     -	http://localhost:8080/browser/index.html#/
     -	http://localhost:8080/actuator
 
-6.  Filter-ing
+6.  # Filtering
     -	#	Static filtering
     		-	JsonIgnoe --//@JsonIgnore
     		-	JsonIgnoreProperties () -- //@JsonIgnoreProperties(value= {"lastName","password"})
     -	#	Dynamic filtering
     	-	-	@JsonFilter("FilterBeanFilter")
 	
-7.  Versioning
+7.  # Versioning
     	-	Media type versioning (a.k.a "content negotiation" or "accept header")
     		-	GitHub
     	-	Custom header versioning
@@ -72,18 +72,18 @@ Social Media Application
     		-	API Documentation
     		-	No Perfect Solution
 
-8.  Spring Boot Security
+8.  # Spring Boot Security
     	-	Basic Authentication (user/2d2f068d-9516-4794-b605-b7df36a8aa54 -- password is printed in the log file)
     	-	Username/password is configured in the application.properties
 	
-9.  Add JPA
+9.  # Add JPA
     -   Table Structure
         -   create table user (id integer not null, birth_date timestamp, name varchar(255), primary key (id))
         	-	http://localhost:8080/h2-console
 		
-10. Richardson Maturity Model
+10. # Richardson Maturity Model
 
-11. Best Practices
+11. # Best Practices
 	-	Consumer First
 	-	Great Documentation
 	-	Make the best use of HTTP
@@ -101,36 +101,6 @@ Social Media Application
 		-	PUT /gists/{id}/star
 		-	DELETE /gists/{id}/star
 	
-Credits:
+# Credits:
 
 This is based on work original by Ranga Karanam: https://github.com/in28minutes/spring-microservices
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
