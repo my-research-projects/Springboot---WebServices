@@ -9,7 +9,7 @@
 -	Open Eclipse
 -	File -> Import -> Existing Maven Project -> Navigate to the folder where you unzipped the zip
 -	Select the right project
--	Choose the Spring Boot Application file (search for @SpringBootApplication)
+-	Choose the Spring Boot Application file (RestfulWebServicesApplication.java)
 -	Right Click on the file and Run as Java Application
 
 ------------------------------------------------------------------------------
@@ -25,13 +25,14 @@ Social Media Application
     -	Create a posts for a User		-->	POST		/users/{id}/posts
     -	Retrieve details of a post		-->	GET 		/users/{id}/posts/{post_id}
 
-2.  # To enable kinks -
+2.  # To enable kinks
     -	HATEOAS - Hybermededia As The Engine of Application State
 	
 3.  # Internationalization
     	-	Configuration
     	-	LocaleResolver
-    		-	Default Locale	-	Locale.US
+    		-	Default Locale	
+		-	Locale.US
     	-	ResourceBundleMessageSource
     -	# Usage
     	-	AutoWire MessageSource
@@ -49,11 +50,11 @@ Social Media Application
     -	http://localhost:8080/actuator
 
 6.  # Filtering
-    -	#	Static filtering
-    		-	JsonIgnoe --//@JsonIgnore
+    -	Static filtering
+    	-	JsonIgnoe --//@JsonIgnore
     		-	JsonIgnoreProperties () -- //@JsonIgnoreProperties(value= {"lastName","password"})
-    -	#	Dynamic filtering
-    	-	-	@JsonFilter("FilterBeanFilter")
+    	-	Dynamic filtering
+    		-	@JsonFilter("FilterBeanFilter")
 	
 7.  # Versioning
     	-	Media type versioning (a.k.a "content negotiation" or "accept header")
