@@ -104,8 +104,5 @@ Social Media Application
 	
 # Credits:
 
-<<<<<<< HEAD:Readme.md
 This is based on work original by Ranga Karanam: https://github.com/in28minutes/spring-microservices
-=======
-This is based on work original by Ranga Karanam: https://github.com/in28minutes/spring-microservices
->>>>>>> 891d6d14a85ac922423c3dbf4dc2f049bade082e:restful-web-services/Readme.md
+
